@@ -65,3 +65,55 @@ build/
 *.iml
 *.iws
 *.ipr
+
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Virtual machine crash logs
+hs_err_pid*
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+gen/
+
+# Maven
+target/
+
+# Gradle
+.gradle/
+build/
+
+# Eclipse
+.project
+.classpath
+.csettings/
+.settings/
+bin/
+tmp/
+
+# VS Code
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Windows thumbnail/cache files
+Thumbs.db
+ehthumbs.db
