@@ -13,8 +13,18 @@ public class EjemploStringTestRendimientoConcat {
             sb.append(a).append(b).append("\n"); // 500 => 0ms, 1000 => 0ms, 10000 => 2ms, 100000 => 10ms
         }
 
+        /*
+         *  El método System.gc() en Java sugiere al recolector de basura (Garbage Collector) que es un buen momento
+         *  para intentar liberar memoria eliminando objetos que ya no se usan.
+         *  No se recomienda usarlo salvo en casos muy concretos (como pruebas de rendimiento o sistemas con memoria
+         *  limitada), porque Java ya sabe cuándo es mejor ejecutar el recolector de basura.
+         */
+        System.gc();
+
         long fin = System.currentTimeMillis();
         System.out.println(fin-inicio);
-        // System.out.println("sb = " + sb.toString());
+        System.out.println("sb = " + sb.toString());
+
+        System.exit(0); // Tampoco es estrictamente necesario, se hace automaticamente
     }
 }
